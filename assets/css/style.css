@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Iceberg', cursive;
+}
+
+:root{
+    --hue-neutral: 213;
+    --hue-wrong: 213;
+    --hue-correct: 190;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #36213e;
+} 
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #63768d;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    
+}
