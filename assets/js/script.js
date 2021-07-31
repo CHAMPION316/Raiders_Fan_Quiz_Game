@@ -24,7 +24,7 @@ function selectAnswer() {
 /* Game questions with 4 total choices */
 let questions = [
     {
-        question: 'What year did the Raiders when their last Super Bowl?',
+        question: 'What year did the Raiders win their last Super Bowl?',
         choice1: '2002', 
         choice2: '1993',
         choice3: '1983',
