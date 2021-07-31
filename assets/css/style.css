@@ -66,3 +66,19 @@ body.wrong {
     --hue: var(--hue-wrong);
     background-color: hsl(var(--hue), 100%, 80%);
 }
+
+.start-btn, .next-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
