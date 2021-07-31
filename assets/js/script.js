@@ -50,23 +50,30 @@ let questions = [
     },
     {
         question: "Which 'Hall of Fame' Raider wore the number 00",
-        choice1: 'Charles Woodson', 
-        choice2: 'Kenny Stabler',
-        choice3: 'Mike Haynes',
-        choice4: 'Jim Otto',
+        answers: [
+            { text: 'Charles Woodson', correct: false },
+            { text: 'Kenny Stabler', correct: false },
+            { text: 'Mike Haynes' , correct: false },
+            { text: 'Jim Otto', correct: true },
+
+        ]
     },
     {
         question: 'Which Raider became a HollyWood star?',
-        choice1: 'Carl Weathers', 
-        choice2: 'Howie Long',
-        choice3: 'Lyle Alzado',
-        choice4: 'Bo Jackson',
+        answers: [
+            { text: 'Carl Weathers', correct: true },
+            { text: 'Howie Long', correct: false },
+            { text: 'Lyle Alzado', correct: false },
+            { text: 'Bo Jackson', correct: false },
+        ]
     },
     {
         question: 'Who is Al Davis?',
-        choice1: 'Ex owner', 
-        choice2: 'Current owner',
-        choice3: "QB from the late 70's",
-        choice4: 'Current star Wide Receiver',
-    }
+        answers: [
+            { text: 'Current star Wie Receiver', correct: false},
+            { text: 'Current Owner', correct: false },
+            { text: "QB from the late 70's", correct: false },
+            { text: 'Ex Owner', correct: true },
+        ]
+    },
 ];
