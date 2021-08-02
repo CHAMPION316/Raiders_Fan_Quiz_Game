@@ -88,6 +88,15 @@ body.wrong {
     align-items: center;
 }
 
+/* grid layout for score system */
+.score-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px 5px;
+}
+
 /* hide selection when it is unnecessary to have visible*/
 .hide {
     display: none;

@@ -3,6 +3,7 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
+const scoreTracker = document.getElementById('score-tracker');
 
 let randomQuestions, currentQuestionIndex;
 
@@ -17,6 +18,7 @@ function startGame() {
     randomQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hide');
+    scoreTracker.classList.remove('hide');
     setNextQuestion();
 };
 
