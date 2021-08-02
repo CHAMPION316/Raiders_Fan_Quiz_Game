@@ -5,6 +5,8 @@
     font-family: 'Iceberg', cursive;
 }
 
+/* 3 chosen variable colors that will be distributed for the game. For answer selection 
+(each a color for right and wrong answers) */
 :root{
     --hue-neutral: 213;
     --hue-wrong: 283;
@@ -23,14 +25,16 @@ body {
     background-color: hsl(var(--hue), 31%, 19%);
 } 
 
+/* When answer is correct this color will become visible upon the backround selection to match correct answer */
 body.correct {
     --hue: var(--hue-correct);
 }
-
+/* When answer is incorrect this color will become visible upon the background selection to match wrong answer */
 body.wrong {
     --hue: var(--hue-wrong);
 }
 
+/* Container layout */
 .container {
     width: 800px;
     max-width: 80%;
@@ -40,6 +44,7 @@ body.wrong {
     box-shadow: 0 0 10px 2px;
 }
 
+/* top to bottom grid with 4 options to choose from when answering question */
 .btn-grid {
     display: grid;
     gap: 10px;
@@ -57,28 +62,33 @@ body.wrong {
     border-color: #b8f3ff;
 }
 
+/* if this button chose is 'correct' then this variable color will display */
 .btn.correct {
     --hue: var(--hue-correct);
     background-color: hsl(var(--hue), 100%, 80%);
 }
 
+/* if this button chose is 'incorrect' then this variable color will display */
 .btn.wrong {
     --hue: var(--hue-wrong);
     background-color: hsl(var(--hue), 100%, 80%);
 }
 
+/* dimensiosn for start and next button*/
 .start-btn, .next-btn {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 20px;
 }
 
+/* Layout for buttons*/
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* hide selection when it is unnecessary to have visible*/
 .hide {
     display: none;
 }
