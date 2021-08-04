@@ -129,3 +129,13 @@ let questions = [
         ]
     },
 ];
+
+function incrementScore() {
+    let scorePoints = document.getElementById('score-up');
+    scorePoints.innerHTML;
+    if (questions(answer === true)) {
+        scorePoints += 100;
+    } else {
+        scorePoints += 0;
+    }
+};
