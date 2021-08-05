@@ -4,7 +4,7 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const scoreTracker = document.getElementById('score-tracker');
-const scorePoints = document.getElementById('score-up');
+
 
 let randomQuestions, currentQuestionIndex;
 
@@ -132,7 +132,9 @@ let questions = [
 ];
 
 function incrementScore() {
-    if (questions === Boolean(true)) {
+    const scorePoints = document.getElementById('score-up');
+    scorePoints.innerText;
+    if (typeof questions === Boolean(true)) {
         scorePoints += 100;
     } else {
         scorePoints += 0;
