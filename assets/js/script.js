@@ -4,6 +4,7 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const scoreTracker = document.getElementById('score-tracker');
+const scoreUpElement = document.getElementById('score-up');
 
 
 let randomQuestions, currentQuestionIndex;
@@ -55,6 +56,7 @@ function resetState() {
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
+    processResults(correct);
     setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -131,13 +133,12 @@ let questions = [
     },
 ];
 
-function incrementScore() {
-    const scorePoints = document.getElementById('score-up');
-    scorePoints.innerText;
-    if (typeof questions === Boolean(true)) {
-        scorePoints += 100;
-    } else {
-        scorePoints += 0;
+function processResults(isCorrect) {
+    if (!isCorrect) {
+      return;
     }
-    return incrementScore;
-};
+    
+    const scoreUp = parseInt(scoreUpElement.textContent, 10) || 0;
+  
+    scoreUpElement.textContent = scoreUp + 100;
+  };
