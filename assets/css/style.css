@@ -75,7 +75,7 @@ body.wrong {
 }
 
 /* dimensiosn for start and next button*/
-.start-btn, .next-btn {
+.start-btn, .next-btn, .score-btn {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 20px;
@@ -86,6 +86,11 @@ body.wrong {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#no-decoration {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* grid layout for score system */

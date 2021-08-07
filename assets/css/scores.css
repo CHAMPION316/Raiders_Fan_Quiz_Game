@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+:root{
+    --hue-neutral: 213;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 31%, 19%);
+} 
+
+#container-username {
+    width: 800px;
+    max-width: 80%;
+    background-color: #63768d;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+#username {
+    text-align: center;
+}
