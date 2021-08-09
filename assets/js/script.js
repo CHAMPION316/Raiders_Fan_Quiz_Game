@@ -1,3 +1,4 @@
+/*...........................................Variables that target elements in the HTML file*/
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const scoreButton = document.getElementById('score-btn');
@@ -7,9 +8,10 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 const scoreTracker = document.getElementById('score-tracker');
 const scoreUpElement = document.getElementById('score-up');
 
-
+/* changeable variables */
 let randomQuestions, currentQuestionIndex;
 
+/*..............................................button clicks for (start,next, and score) buttons*/
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
@@ -17,6 +19,8 @@ nextButton.addEventListener('click', () => {
 });
 scoreButton.addEventListener('click', scoreList);
 
+
+/*........................................Function for start of quiz with quiz questions included*/
 function startGame() {
   startButton.classList.add('hide');
   randomQuestions = questions.sort(() => Math.random() - .5);
@@ -28,11 +32,13 @@ function startGame() {
   scoreButton.classList.add('hide');
 };
 
+/*...........................................function that randomizes question order in quiz*/
 function setNextQuestion() {
   resetState();
   showQuestion(randomQuestions[currentQuestionIndex]);
 };
 
+/*............................................................ Adds question to element */
 function showQuestion(question) {
   questionElement.innerText = question.question;
   question.answers.forEach(answer => {
@@ -47,6 +53,7 @@ function showQuestion(question) {
   })
 };
 
+
 function resetState() {
   clearStatusClass(document.body);
   nextButton.classList.add('hide');
@@ -55,7 +62,7 @@ function resetState() {
   }
 };
 
-/* Checks if selected button is part of the correct dataset */
+/*.........................................Checks if selected button is part of the correct dataset*/
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
@@ -77,6 +84,7 @@ function selectAnswer(e) {
   }
 };
 
+/*.........................................function that determines 'right' and 'wrong' answers*/
 function setStatusClass(element, correct) {
   clearStatusClass(element);
   if (correct) {
@@ -86,13 +94,14 @@ function setStatusClass(element, correct) {
   }
 };
 
+/*...............................function that clears the highlighted 'right' and 'wrong' answers*/
 function clearStatusClass(element) {
   element.classList.remove('correct');
   element.classList.remove('wrong');
 };
 
 
-/* Game questions with 4 total choices */
+/*................................Object variable with game questions with 4 total choices*/
 let questions = [{
     question: 'What year did the Raiders win their last Super Bowl?',
     answers: [{
@@ -196,7 +205,7 @@ let questions = [{
   },
 ];
 
-
+/*...........................................Score incrementor for answering correctly and incorrect*/
 function processResults(isCorrect) {
   if (!isCorrect) {
     return;
@@ -207,6 +216,7 @@ function processResults(isCorrect) {
   scoreUpElement.textContent = scoreUp + 100;
 };
 
+/*......................................function that moves score to score list*/
 function scoreList() {
 
 }

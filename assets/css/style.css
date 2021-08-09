@@ -13,6 +13,7 @@
     --hue-correct: 190;
 }
 
+/*...........................................................body of html file*/
 body {
     --hue: var(--hue-neutral);
     padding: 0;
@@ -51,6 +52,7 @@ body.wrong {
     margin: 20px 0;
 }
 
+/*.....................................................button styling*/
 .btn {
     --hue: var(--hue-neutral);
     background-color: hsl(var(--hue), 20%, 70%);
@@ -58,6 +60,7 @@ body.wrong {
     padding: 5px 10px;
 }
 
+/*...................................................button hover style*/
 .btn:hover {
     border-color: #b8f3ff;
 }
@@ -68,20 +71,20 @@ body.wrong {
     background-color: hsl(var(--hue), 100%, 80%);
 }
 
-/* if this button chose is 'incorrect' then this variable color will display */
+/* if this button chose is 'incorrect' then this variable color will display*/
 .btn.wrong {
     --hue: var(--hue-wrong);
     background-color: hsl(var(--hue), 100%, 80%);
 }
 
-/* dimensiosn for start and next button*/
+/*......................................dimensiosn for start and next button*/
 .start-btn, .next-btn, .score-btn {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 20px;
 }
 
-/* Layout for buttons*/
+/*....................................................Layout for buttons*/
 .controls {
     display: flex;
     justify-content: center;
@@ -93,7 +96,7 @@ body.wrong {
     color: inherit;
 }
 
-/* grid layout for score system */
+/*.........................................grid layout for score system*/
 .score-grid {
     display: flex;
     flex-direction: column;
@@ -101,7 +104,7 @@ body.wrong {
     align-items: center;
 }
 
-/* hide selection when it is unnecessary to have visible*/
+/*................................hide selection when it is unnecessary to have visible*/
 .hide {
     display: none;
 }
