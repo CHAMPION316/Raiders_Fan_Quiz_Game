@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="assets/js/script.js"></script>
-    <title>Raider Quiz Game</title>
-</head>
-
-<body>
-    <!--Container for questions and 4 options to choose from-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Are you a Raiders fan?</title>
+  </head>
+  <body>
+    <!--Container explaining the quiz game-->
     <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
-        </div>
-        <!--A start game button and a next button when anwering questions-->
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Are you a hardcore Raiders fan?<br>Find Out!</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
-            <button id="score-btn" class="score-btn btn hide">
-                <a href="highscores.html" id="no-decoration">Score List</a>
-            </button>
-        </div>
-        <!--Score tracker Div-->
-        <div id="score-tracker" class="score-grid hide">
-            <h3>Score</h3>
-            <div id="score-up">0</div>
-        </div>
-    </div>
-</body>
+      <h1>Are you a hardcore Raiders fan?</h1>
+      <h3>Find out by taking the quiz:</h3>
 
+      <ul>
+          <li>There will be 30 questions</li>
+          <li>Each correct answer is worth 100 points</li>
+          <li>Incorrect answers is worth 0 points</li>
+          <li>Add your name at the end to be greeted by a message</li>
+      </ul>
+      <button class="play-btn btn">
+        <a href="game.html" class="no-decoration">Start Playing!</a>
+      </button>
+    </div>
+  </body>
 </html>
