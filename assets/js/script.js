@@ -728,20 +728,3 @@ function formSubmission() {
 
 
 };
-
-
-
-
-/*function formSubmission() {
-  if (confirm('Do you want to submit')) {
-    document.getElementById('submit-form');
-  } else {
-    return false;
-  };
-
-
-};*/
-
-/*function store() {
-  localStorage.setItem('name', name.value);
-}*/
