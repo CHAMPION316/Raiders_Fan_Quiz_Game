@@ -1,3 +1,4 @@
+/*.............................................Variables that target elements in the DOM */
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const scoreButton = document.getElementById('score-btn');
@@ -11,13 +12,14 @@ var submitForm = document.getElementById('submit-form');
 
 let randomQuestions, currentQuestionIndex;
 
+/*............................Buttons that will be added to functions when needed*/
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 });
-/*scoreButton.addEventListener('click', scoreList);*/
 
+/*..........................................................Start game function with button*/
 function startGame() {
   startButton.classList.add('hide');
   randomQuestions = questions.sort(() => Math.random() - .5);
@@ -29,11 +31,13 @@ function startGame() {
   scoreButton.classList.add('hide');
 };
 
+/*...........function that presents questions in a random order with no repeating current questions*/
 function setNextQuestion() {
   resetState();
   showQuestion(randomQuestions[currentQuestionIndex]);
 };
 
+/*.......................function that allows the selection of questions within the DOM by clicking*/
 function showQuestion(question) {
   questionElement.innerText = question.question;
   question.answers.forEach(answer => {
@@ -48,6 +52,7 @@ function showQuestion(question) {
   })
 };
 
+/*.........................function that clears the selection of questions with a next button*/
 function resetState() {
   clearStatusClass(document.body);
   nextButton.classList.add('hide');
@@ -56,7 +61,7 @@ function resetState() {
   }
 };
 
-/* Checks if selected button is part of the correct dataset */
+/*...................................Checks if selected button is part of the correct dataset */
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
@@ -68,6 +73,7 @@ function selectAnswer(e) {
     setStatusClass(button, button.dataset.correct)
   })
 
+  /* When all questions are used 2 buttons will present the next options */
   if (randomQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide');
   } else {
@@ -78,6 +84,7 @@ function selectAnswer(e) {
   }
 };
 
+/* function that determines correct and incorrect answers with true and fales */
 function setStatusClass(element, correct) {
   clearStatusClass(element);
   if (correct) {
@@ -87,13 +94,14 @@ function setStatusClass(element, correct) {
   }
 };
 
+/*.........function that clears correct and incorrect options to present the next set of options*/
 function clearStatusClass(element) {
   element.classList.remove('correct');
   element.classList.remove('wrong');
 };
 
 
-/* Game questions with 4 total choices */
+/*...................................Game questions with 4 total choices, 30 questions total*/
 let questions = [{
     question: 'What year did the Raiders win their last Super Bowl?',
     answers: [{
@@ -697,7 +705,7 @@ let questions = [{
   },
 ];
 
-
+/*........function that increments the score for correct answers but does nothing for wrong answers*/
 function processResults(isCorrect) {
   if (!isCorrect) {
     return;
@@ -708,9 +716,7 @@ function processResults(isCorrect) {
   scoreUpElement.textContent = scoreUp + 100;
 };
 
-/*submitForm.addEventListener('click', formSubmission)*/
-
-
+/*........function to submit user's name, and pop up window portrays text category of user's score*/
 function formSubmission() {
   firstName.innerText
   if (confirm('Do you want to submit')) {
