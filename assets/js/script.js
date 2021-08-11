@@ -216,7 +216,22 @@ function processResults(isCorrect) {
   scoreUpElement.textContent = scoreUp + 100;
 };
 
-/*......................................function that moves score to score list*/
-function scoreList() {
 
-}
+/* Function that creates a pop-up showing your placement as a fan within the score system*/
+function formSubmission() {
+  firstName.innerText
+  if (confirm('Do you want to submit')) {
+    alert(`
+    (This is where you rank as a fan ${firstName.value})\n 
+    100 - 500 : You must be a Chiefs fan\n
+    600 - 1000 : Are you sure you watch football?\n 
+    1100 - 1500 : You lied about being a hardcore fan\n 
+    1600 - 2000 : Alright you know something\n 
+    2100 - 2500 : I see you're a veteran with this team\n 
+    2600 - 3000 : Well look at you, you're a legendary fan`)
+  } else {
+    return false;
+  };
+
+
+};

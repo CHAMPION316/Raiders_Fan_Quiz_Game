@@ -3,10 +3,12 @@
     font-family:'Times New Roman', Times, serif;
 }
 
+/*.................Chosen variable color for background-color*/
 :root{
     --hue-neutral: 213;
 }
 
+/*.......................................................body styling*/
 body {
     --hue: var(--hue-neutral);
     padding: 0;
@@ -19,6 +21,7 @@ body {
     background-color: hsl(var(--hue), 31%, 19%);
 } 
 
+/*............................................Container size and dimensions*/
 #container-username {
     width: 800px;
     max-width: 80%;
@@ -28,6 +31,15 @@ body {
     box-shadow: 0 0 10px 2px;
 }
 
-#username {
+/*.................................................Center container*/
+#container-title {
     text-align: center;
 }
+
+/*#username {
+    text-align: center;
+}
+
+.center-me {
+    text-align: center;
+}*/

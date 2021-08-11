@@ -13,12 +13,14 @@
 <body>
     <div id="container-username">
         <div id="container-title">
-            <div id="username">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username">
-            </div>
-        </div>
-    </div>
+          <h3>Type your name to see your score!</h3>
+          <div>
+              <form onsubmit="onsubmit = formSubmission()">
+              <input type='text' id='firstname' name='firstname' required />
+              <input type='submit' id="submit-form" value="Go Now!">
+              </form>
+          </div>
+      </div>
 </body>
 
 </html>
