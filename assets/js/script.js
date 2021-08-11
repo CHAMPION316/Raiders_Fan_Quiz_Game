@@ -1,4 +1,3 @@
-/*...........................................Variables that target elements in the HTML file*/
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const scoreButton = document.getElementById('score-btn');
@@ -7,20 +6,18 @@ const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const scoreTracker = document.getElementById('score-tracker');
 const scoreUpElement = document.getElementById('score-up');
+var firstName = document.getElementById('firstname');
+var submitForm = document.getElementById('submit-form');
 
-/* changeable variables */
 let randomQuestions, currentQuestionIndex;
 
-/*..............................................button clicks for (start,next, and score) buttons*/
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 });
-scoreButton.addEventListener('click', scoreList);
+/*scoreButton.addEventListener('click', scoreList);*/
 
-
-/*........................................Function for start of quiz with quiz questions included*/
 function startGame() {
   startButton.classList.add('hide');
   randomQuestions = questions.sort(() => Math.random() - .5);
@@ -32,13 +29,11 @@ function startGame() {
   scoreButton.classList.add('hide');
 };
 
-/*...........................................function that randomizes question order in quiz*/
 function setNextQuestion() {
   resetState();
   showQuestion(randomQuestions[currentQuestionIndex]);
 };
 
-/*............................................................ Adds question to element */
 function showQuestion(question) {
   questionElement.innerText = question.question;
   question.answers.forEach(answer => {
@@ -53,7 +48,6 @@ function showQuestion(question) {
   })
 };
 
-
 function resetState() {
   clearStatusClass(document.body);
   nextButton.classList.add('hide');
@@ -62,7 +56,7 @@ function resetState() {
   }
 };
 
-/*.........................................Checks if selected button is part of the correct dataset*/
+/* Checks if selected button is part of the correct dataset */
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
@@ -84,7 +78,6 @@ function selectAnswer(e) {
   }
 };
 
-/*.........................................function that determines 'right' and 'wrong' answers*/
 function setStatusClass(element, correct) {
   clearStatusClass(element);
   if (correct) {
@@ -94,19 +87,18 @@ function setStatusClass(element, correct) {
   }
 };
 
-/*...............................function that clears the highlighted 'right' and 'wrong' answers*/
 function clearStatusClass(element) {
   element.classList.remove('correct');
   element.classList.remove('wrong');
 };
 
 
-/*................................Object variable with game questions with 4 total choices*/
+/* Game questions with 4 total choices */
 let questions = [{
     question: 'What year did the Raiders win their last Super Bowl?',
     answers: [{
         text: '2003',
-        correct: true
+        correct: false
       },
       {
         text: '1993',
@@ -114,7 +106,7 @@ let questions = [{
       },
       {
         text: '1983',
-        correct: false
+        correct: true
       },
       {
         text: '1972',
@@ -203,9 +195,509 @@ let questions = [{
       },
     ]
   },
+  {
+    question: 'This Raider is still the last defensive player to win the heisman trophy in college',
+    answers: [{
+        text: 'Barry Bonds',
+        correct: false
+      },
+      {
+        text: 'Fabian Washington',
+        correct: false
+      },
+      {
+        text: 'Charles Woodson',
+        correct: true
+      },
+      {
+        text: 'Stuart Schweigert',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Who did the Raiders draft in the first round of the 2018 draft?',
+    answers: [{
+        text: 'Kolton Miller',
+        correct: true
+      },
+      {
+        text: 'Josh Jacobs',
+        correct: false
+      },
+      {
+        text: 'Michael Jordan',
+        correct: false
+      },
+      {
+        text: 'Darren McFadden',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'How many Super Bowls do the Raiders have?',
+    answers: [{
+        text: '6',
+        correct: false
+      },
+      {
+        text: '3',
+        correct: true
+      },
+      {
+        text: '1',
+        correct: false
+      },
+      {
+        text: '4',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'What year were the Raiders established?',
+    answers: [{
+        text: '1998',
+        correct: false
+      },
+      {
+        text: '1985',
+        correct: false
+      },
+      {
+        text: '1973',
+        correct: false
+      },
+      {
+        text: '1960',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Who is the current Raiders coach in 2021 that was also their coach between 98-01',
+    answers: [{
+        text: 'John Madden',
+        correct: false
+      },
+      {
+        text: 'Jon Gruden',
+        correct: true
+      },
+      {
+        text: 'Jeff Fisher',
+        correct: false
+      },
+      {
+        text: 'Mike Lombardi',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Last Quaterback to take the Raiders to the Super Bowl?',
+    answers: [{
+        text: 'Rich Gannon',
+        correct: true
+      },
+      {
+        text: 'Tom Brady',
+        correct: false
+      },
+      {
+        text: 'Derek Carr',
+        correct: false
+      },
+      {
+        text: 'John Elway',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'This hall of fame Raider has an award named after him for best college WR',
+    answers: [{
+        text: 'Fred Biletnikoff',
+        correct: true
+      },
+      {
+        text: 'Vince Lombardi',
+        correct: false
+      },
+      {
+        text: 'Bill Belichick',
+        correct: false
+      },
+      {
+        text: 'Barry Sanders',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Considered the Raiders biggest draft bust ever',
+    answers: [{
+        text: 'Robert Gallery',
+        correct: false
+      },
+      {
+        text: 'Michael Huff',
+        correct: false
+      },
+      {
+        text: 'Jamarcus Russell',
+        correct: true
+      },
+      {
+        text: 'Ryan Leaf',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'This Raider played both football and baseball and excelled at both',
+    answers: [{
+        text: 'Charlie Garner',
+        correct: false
+      },
+      {
+        text: 'Bo Jackson',
+        correct: true
+      },
+      {
+        text: 'Marcus Allen',
+        correct: false
+      },
+      {
+        text: 'Deion Sanders',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'In 2020 the Raiders moved to a new city with a brand new stadium. What city?',
+    answers: [{
+        text: 'Oakland',
+        correct: false
+      },
+      {
+        text: 'Phoenix',
+        correct: false
+      },
+      {
+        text: 'Los Angeles',
+        correct: false
+      },
+      {
+        text: 'Las Vegas',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'How many Super Bowls did Tom Flores win for the Raiders as Head Coach?',
+    answers: [{
+        text: '3',
+        correct: false
+      },
+      {
+        text: '1',
+        correct: false
+      },
+      {
+        text: '0',
+        correct: false
+      },
+      {
+        text: '2',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Raiders WR that has the record for most receiving yards',
+    answers: [{
+        text: 'Tim Brown',
+        correct: true
+      },
+      {
+        text: 'Jerry Rice',
+        correct: false
+      },
+      {
+        text: 'Fred Biletnikoff',
+        correct: false
+      },
+      {
+        text: 'Cliff Branch',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Which Raider leads the franchise in rushing yards',
+    answers: [{
+        text: 'Curtis Martin',
+        correct: false
+      },
+      {
+        text: 'Michael Bush',
+        correct: false
+      },
+      {
+        text: 'Marcus Allen',
+        correct: true
+      },
+      {
+        text: 'LaMont Jordan',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'What year did the Raiders last make the playoffs?',
+    answers: [{
+        text: '2020',
+        correct: false
+      },
+      {
+        text: '2016',
+        correct: true
+      },
+      {
+        text: '2010',
+        correct: false
+      },
+      {
+        text: '2003',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'What position did Gene Upshaw play?',
+    answers: [{
+        text: 'Left Guard',
+        correct: true
+      },
+      {
+        text: 'Right Guard',
+        correct: false
+      },
+      {
+        text: 'Right Tackle',
+        correct: false
+      },
+      {
+        text: 'Center',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'How many seasons did Howie Long play in the NFL?',
+    answers: [{
+        text: '5',
+        correct: false
+      },
+      {
+        text: '8',
+        correct: false
+      },
+      {
+        text: '10',
+        correct: false
+      },
+      {
+        text: '13',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Ted Hendricks nickname was?',
+    answers: [{
+        text: 'Lightning',
+        correct: false
+      },
+      {
+        text: 'The Mad Stork',
+        correct: true
+      },
+      {
+        text: 'The Ghost',
+        correct: false
+      },
+      {
+        text: 'Big foot',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: "Ken Stabler's nickname was?",
+    answers: [{
+        text: 'Houdini',
+        correct: false
+      },
+      {
+        text: 'Mr. Clutch',
+        correct: false
+      },
+      {
+        text: 'The Equalizer',
+        correct: false
+      },
+      {
+        text: 'The Snake',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: "Which Raider was nick named 'The Ghost'",
+    answers: [{
+        text: 'Jim Otto',
+        correct: false
+      },
+      {
+        text: 'Art Shell',
+        correct: false
+      },
+      {
+        text: 'Phil Villapiano',
+        correct: false
+      },
+      {
+        text: 'Dave Casper',
+        correct: true
+      },
+    ]
+  },
+  {
+    question: 'Who has been the Raiders starting QB from 2014 - current',
+    answers: [{
+        text: 'Derek Carr',
+        correct: true
+      },
+      {
+        text: 'Steve McNair',
+        correct: false
+      },
+      {
+        text: 'Marcus Mariota',
+        correct: false
+      },
+      {
+        text: 'Chris Carr',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'What ex Raider did the Raiders trade away for 3 first round picks in 2018',
+    answers: [{
+        text: 'Gabe Jackson',
+        correct: false
+      },
+      {
+        text: 'Rodney Hudson',
+        correct: false
+      },
+      {
+        text: 'Khalil Mack',
+        correct: true
+      },
+      {
+        text: 'Robert Gallery',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'To what team was head coach Jon Gruden traded to in his first tenure?',
+    answers: [{
+        text: 'Packers',
+        correct: false
+      },
+      {
+        text: 'Buccaneers',
+        correct: true
+      },
+      {
+        text: 'Giants',
+        correct: false
+      },
+      {
+        text: 'Jaguars',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: "How many Raiders are in the 'Hall of Fame'?",
+    answers: [{
+        text: '26',
+        correct: true
+      },
+      {
+        text: '10',
+        correct: false
+      },
+      {
+        text: '15',
+        correct: false
+      },
+      {
+        text: '20',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Which Raider has their birthday on the 4th of July?',
+    answers: [{
+        text: 'Al Davis',
+        correct: true
+      },
+      {
+        text: 'John Madden',
+        correct: false
+      },
+      {
+        text: 'Cliff Branch',
+        correct: false
+      },
+      {
+        text: 'George Atkinson',
+        correct: false
+      },
+    ]
+  },
+  {
+    question: 'Which Raider had a stutter problem?',
+    answers: [{
+        text: 'Lincoln Kennedy',
+        correct: false
+      },
+      {
+        text: 'Art Shell',
+        correct: false
+      },
+      {
+        text: 'Lester Hayes',
+        correct: true
+      },
+      {
+        text: 'Cliff Branch',
+        correct: false
+      },
+    ]
+  },
 ];
 
-/*...........................................Score incrementor for answering correctly and incorrect*/
+
 function processResults(isCorrect) {
   if (!isCorrect) {
     return;
@@ -216,8 +708,9 @@ function processResults(isCorrect) {
   scoreUpElement.textContent = scoreUp + 100;
 };
 
+/*submitForm.addEventListener('click', formSubmission)*/
 
-/* Function that creates a pop-up showing your placement as a fan within the score system*/
+
 function formSubmission() {
   firstName.innerText
   if (confirm('Do you want to submit')) {
@@ -235,3 +728,20 @@ function formSubmission() {
 
 
 };
+
+
+
+
+/*function formSubmission() {
+  if (confirm('Do you want to submit')) {
+    document.getElementById('submit-form');
+  } else {
+    return false;
+  };
+
+
+};*/
+
+/*function store() {
+  localStorage.setItem('name', name.value);
+}*/
