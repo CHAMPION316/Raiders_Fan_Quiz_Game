@@ -76,7 +76,8 @@ From left to right in hexadecimal:
 - [GitHub](https://github.com/) - used to host the project.
 - [Google Fonts](https://fonts.google.com/) - used to provide my fonts (font-family: 'Iceberg)
 - [Coolors](https://coolors.co/) - used to create the color palette for my whole website.
-- [Am I Responsive?](http://ami.responsivedesign.is/) - used to present the site on different devices.
+- [Am I Responsive?](http://ami.responsivedesign.is/) - used to test the site on many devices
+- [Responsive Checker](https://www.responsivedesignchecker.com/) - used to test the site on many devices
 - [HTML Validator](https://validator.w3.org/) - used to find errors that don't belong in my HTML code.
 - [CSS Validator](https://jigsaw.w3.org/css-validator/) - used to find errors that don't belong in my CSS code.
 - [JSHint](https://jshint.com/) - used to find errors in my JS code.

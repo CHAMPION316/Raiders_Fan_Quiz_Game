@@ -31,3 +31,27 @@
 ![js validator](readme-files/js-validator.jpg)
 
 - The warnings are for const variables that are considered to be available in ES6 or Mozilla JS extensions. They work perfectly fine and didn't cause any errors. 
+
+## Responsiveness
+
+* To test the responsiveness of the site I used 
+    * [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+    * [FireFox DevTools](https://developer.mozilla.org/en-US/docs/Tools)
+    * [Microsoft Edge](https://developer.microsoft.com/en-us/microsoft-edge/tools/)
+
+Notes:
+
+- The design is responsive in what I have experienced all screen sizes.
+
+[Responsive Checker](https://www.responsivedesignchecker.com/)
+    
+- Was my checker for multiple screen size tesing devices. 
+
+## Browser compatibility
+
+Notes:
+
+- I rigorously tested on the 3 most known browsers: 
+    * [Chrome](https://www.google.com/chrome/)
+    * [FireFox](https://www.mozilla.org/en-US/firefox/new/)
+    * [Edge](https://www.microsoft.com/en-us/edge)
