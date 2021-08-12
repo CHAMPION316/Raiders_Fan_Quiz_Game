@@ -30,6 +30,24 @@ I used [lucid](https://lucid.app/users/login#/login) to create all my wireframes
 |    :----:    |     :----:   |    :----:    |
 |[Home Page](wireframes/index_page.jpg)|[Home Page](wireframes/index_page.jpg)|[Home Page](wireframes/index_page_mobile.jpg)|
 |[Questions](wireframes/question_container.jpg)|[Questions](wireframes/question_container.jpg)|[Questions](wireframes/correct_wrong_mobile.jpg)|
-|[User and Score](wireframes/user_score.jpg)|[User and Score](wireframes/user_score.jpg)|[User and Score](wireframes/phone-vp.png)|
+|[User and Score](wireframes/user_score.jpg)|[User and Score](wireframes/user_score.jpg)|[Username submit](wireframes/username_submit.jpg)|
 
 ----
+
+## 2. Features
+
+#### 2.1. Existing features
+
+All of my pages consist of the "box-sizing: border-box" in order to make sizing easier for all devices. A simplistic index.html page [index-page](readme-files/index-intro-page.jpg). 
+
+The color palette I used was auto generated using [coolors](https://coolors.co/)
+
+<img src="readme-files/color-palette.jpg">
+
+From left to right in hexadecimal:
+
+* 36213e
+* 554971
+* 63768d
+* 8ac6d0
+* b8f3ff
