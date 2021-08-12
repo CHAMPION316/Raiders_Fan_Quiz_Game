@@ -28,11 +28,11 @@
 
 ![scores.css](readme-files/scorescss-validator.jpg)
 
-- The --hue error is for a color variable that was also used in this stylesheet.
+- The --hue error is for a color variable that was also used in the scores.css stylesheet.
 
-### JS Validation
+[JS Validator](https://jshint.com/)
 
-[JSHint](https://jshint.com/) :
+**Script-JS Page**
 
 ![js validator](readme-files/js-validator.jpg)
 
@@ -47,7 +47,7 @@
 
 Notes:
 
-- The design is responsive in what I have experienced all screen sizes.
+- The design is responsive in most if not all screen sizes.
 
 [Responsive Checker](https://www.responsivedesignchecker.com/)
     

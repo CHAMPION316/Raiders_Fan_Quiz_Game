@@ -38,7 +38,11 @@ I used [lucid](https://lucid.app/users/login#/login) to create all my wireframes
 
 #### 2.1. Existing features
 
-All of my pages consist of the "box-sizing: border-box" in order to make sizing easier for all devices. A simplistic index.html page [index-page](readme-files/index-intro-page.jpg). 
+- Logo is present at the beginning of the page as a huge question "Are you a hardcore Raiders fan?"
+
+- All of my pages consist of the "box-sizing: border-box" in order to make sizing easier for all devices when it comes to taking a quiz. 
+
+<img src="readme-files/index-intro-page.jpg">
 
 The color palette I used was auto generated using [coolors](https://coolors.co/)
 
@@ -57,7 +61,7 @@ From left to right in hexadecimal:
     <img src="readme-files/questions.jpg">
 
 - The Question Section
-    - Whether you choose the correct or wrong answer the options will highlight afterward to reveal the one and only correct answer in it's own unique color while the others all change to their own same color to reveal the wrong answers. 
+    - Whether you choose the correct or wrong answer the options will highlight after clicking to reveal the one and only correct answer in it's own unique color while the others all change to their own same color to reveal the wrong answers. 
 <img src="readme-files/correct-incorrect.jpg">
 
 - The Score Area
@@ -79,14 +83,14 @@ From left to right in hexadecimal:
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - provide the logic of the language.
 - [Lucid](https://lucid.app/users/login#/login) - used to create the project's wireframes.
 - [Gitpod](https://gitpod.io/) - used to develop the website
-- [Visual Studio Code](https://code.visualstudio.com/download) - used to develop the website outside of Gitpod by running the code safetly offset incase Gitpod's servers crash. 
+- [Visual Studio Code](https://code.visualstudio.com/download) - used to develop the website outside of Gitpod by running the code safetly offsite incase Gitpod's servers crash. 
 - [GitHub](https://github.com/) - used to host the project.
 - [Google Fonts](https://fonts.google.com/) - used to provide my fonts (font-family: 'Iceberg)
 - [Coolors](https://coolors.co/) - used to create the color palette for my whole website.
-- [Am I Responsive?](http://ami.responsivedesign.is/) - used to test the site on many devices
-- [Responsive Checker](https://www.responsivedesignchecker.com/) - used to test the site on many devices
-- [HTML Validator](https://validator.w3.org/) - used to find errors that don't belong in my HTML code.
-- [CSS Validator](https://jigsaw.w3.org/css-validator/) - used to find errors that don't belong in my CSS code.
+- [Am I Responsive?](http://ami.responsivedesign.is/) - used to test the site on many devices.
+- [Responsive Checker](https://www.responsivedesignchecker.com/) - used to test the site on many devices.
+- [HTML Validator](https://validator.w3.org/) - used to find errors that are in my HTML code.
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) - used to find errors that are in my CSS code.
 - [JSHint](https://jshint.com/) - used to find errors in my JS code.
 
 ## 4. Testing
@@ -147,3 +151,4 @@ To clone this project from GitHub:
 - [Stackoverflow](https://stackoverflow.com/) for having answers when I need them.
 - [Google](https://google.com/) for being the best search engine in this day and age.
 - [YouTube](https://www.youtube.com/) for having some of the best channels when it comes to learning how to program. 
+- [WDC](https://www.youtube.com/c/WebDevSimplified) for explaining code like no one else. 
