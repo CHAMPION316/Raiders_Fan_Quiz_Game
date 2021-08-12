@@ -8,15 +8,14 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 const scoreTracker = document.getElementById('score-tracker');
 const scoreUpElement = document.getElementById('score-up');
 var firstName = document.getElementById('firstname');
-var submitForm = document.getElementById('submit-form');
 
 let randomQuestions, currentQuestionIndex;
 
 /*............................Buttons that will be added to functions when needed*/
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
-  currentQuestionIndex++
-  setNextQuestion()
+  currentQuestionIndex++;
+  setNextQuestion();
 });
 
 /*..........................................................Start game function with button*/
@@ -29,13 +28,13 @@ function startGame() {
   setNextQuestion();
   scoreUpElement.textContent = 0;
   scoreButton.classList.add('hide');
-};
+}
 
 /*...........function that presents questions in a random order with no repeating current questions*/
 function setNextQuestion() {
   resetState();
   showQuestion(randomQuestions[currentQuestionIndex]);
-};
+}
 
 /*.......................function that allows the selection of questions within the DOM by clicking*/
 function showQuestion(question) {
@@ -48,16 +47,16 @@ function showQuestion(question) {
       button.dataset.correct = answer.correct;
     }
     button.addEventListener('click', selectAnswer);
-    answerButtonsElement.appendChild(button)
-  })
-};
+    answerButtonsElement.appendChild(button);
+  });
+}
 
 /*.........................function that clears the selection of questions with a next button*/
 function resetState() {
   clearStatusClass(document.body);
   nextButton.classList.add('hide');
   while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    answerButtonsElement.removeChild(answerButtonsElement.firstChild);
   }
 };
 
@@ -70,8 +69,8 @@ function selectAnswer(e) {
   setStatusClass(document.body, correct);
 
   Array.from(answerButtonsElement.children).forEach(button => {
-    setStatusClass(button, button.dataset.correct)
-  })
+    setStatusClass(button, button.dataset.correct);
+  });
 
   /* When all questions are used 2 buttons will present the next options */
   if (randomQuestions.length > currentQuestionIndex + 1) {
@@ -82,7 +81,7 @@ function selectAnswer(e) {
     scoreButton.innerText;
     scoreButton.classList.remove('hide');
   }
-};
+}
 
 /* function that determines correct and incorrect answers with true and fales */
 function setStatusClass(element, correct) {
@@ -92,13 +91,13 @@ function setStatusClass(element, correct) {
   } else {
     element.classList.add('wrong');
   }
-};
+}
 
 /*.........function that clears correct and incorrect options to present the next set of options*/
 function clearStatusClass(element) {
   element.classList.remove('correct');
   element.classList.remove('wrong');
-};
+}
 
 
 /*...................................Game questions with 4 total choices, 30 questions total*/
@@ -714,11 +713,11 @@ function processResults(isCorrect) {
   const scoreUp = parseInt(scoreUpElement.textContent, 10) || 0;
 
   scoreUpElement.textContent = scoreUp + 100;
-};
+}
 
 /*........function to submit user's name, and pop up window portrays text category of user's score*/
 function formSubmission() {
-  firstName.innerText
+  firstName.innerText;
   if (confirm('Do you want to submit')) {
     alert(`
     (This is where you rank as a fan ${firstName.value})\n 
@@ -727,10 +726,10 @@ function formSubmission() {
     1100 - 1500 : You lied about being a hardcore fan\n 
     1600 - 2000 : Alright you know something\n 
     2100 - 2500 : I see you're a veteran with this team\n 
-    2600 - 3000 : Well look at you, you're a legendary fan`)
+    2600 - 3000 : Well look at you, you're a legendary fan`);
   } else {
     return false;
-  };
+  }
 
 
-};
+}
