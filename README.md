@@ -80,3 +80,7 @@ From left to right in hexadecimal:
 - [HTML Validator](https://validator.w3.org/) - used to find errors that don't belong in my HTML code.
 - [CSS Validator](https://jigsaw.w3.org/css-validator/) - used to find errors that don't belong in my CSS code.
 - [JSHint](https://jshint.com/) - used to find errors in my JS code.
+
+## 4. Testing
+
+- The testing process was done on a separate file [TESTING.md](TESTING.md)
