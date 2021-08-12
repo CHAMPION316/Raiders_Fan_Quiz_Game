@@ -63,6 +63,11 @@ From left to right in hexadecimal:
 - The Score Area
     - Upon answering correctly the score at the bottom will increment to 100 points for every correct answer while the the wrong answer will reward you with 0 points. 
 
+### 2.2. Features left to implement in the future
+- Add a modernized username and score chart with rankings.
+- Add sounds when clicking on the correct and wrong answer.
+- Add a background gamer like tune as you take the quiz.
+
 ---
 
 ## 3. Technologies used
@@ -85,3 +90,58 @@ From left to right in hexadecimal:
 ## 4. Testing
 
 - The testing process was done on a separate file [TESTING.md](TESTING.md)
+
+----
+
+## 5. Deployment
+
+**To deploy the project**
+
+This project is hosted in GitHub Pages
+
+1. On the menu on the top of the project’s repository on GitHub select **Settings**.
+2. Scroll down to the GitHub **Pages** section.
+3. Inside that section, click on the drop-down menu under **Source** and select **Main Branch**.
+4. The page refreshes automatically and the website is now deployed.
+5. The link to the webpage is just in the GitHub **Pages** section down below.
+
+Only one branch has been used for this project.
+
+**To run the project locally**
+
+To clone this project from GitHub:
+
+1. Under the repository’s name, click **Clone or download**.
+2. In the **Clone with hTTPS** section, copy the given URL.
+3. In your IDE of choice, open **Git Bash**.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type **git clone**, and then paste the URL copied from GitHub.
+6. Press **enter** and the local clone will be created.
+
+----
+
+## 6. Credits
+
+### 6.1. Content
+
+- The website and written text was done with the help of outside resources and my own subtle changes to design and feel. 
+- I took a lot of inspiration and ideas from [WDC](https://www.youtube.com/c/WebDevSimplified)
+- I used Stack overflow to help me randomize my questions in it's object array [Stack overflow](https://stackoverflow.com/)
+- I asked the slack community for help as well espcially in the ask-us-anything channel [Slack](https://slack.com/intl/en-se/)
+
+### 6.2. Media
+
+### Images
+
+- All the images in the readme-files folder and wireframes folder were screen shot by me.
+
+---
+
+### 6.1. Acknowledgments
+
+- [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/?originalSubdomain=ng) for his honesty and direction during this whole project.
+- The [Code Institute](https://codeinstitute.net/) team.
+- Everyone that I communicated with over at [Slack](https://slack.com/intl/en-se/).
+- [Stackoverflow](https://stackoverflow.com/) for having answers when I need them.
+- [Google](https://google.com/) for being the best search engine in this day and age.
+- [YouTube](https://www.youtube.com/) for having some of the best channels when it comes to learning how to program. 

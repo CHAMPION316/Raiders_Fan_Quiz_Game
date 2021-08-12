@@ -16,7 +16,9 @@
 
 ![highscores-html-validator](readme-files/highscores-html-validator.jpg)
 
-- **Style-CSS Page**
+[CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+- **Style-CSS Pages**
 
 ![style.css validator](readme-files/stylecss-validator.jpg) 
     
@@ -27,6 +29,10 @@
 ![scores.css](readme-files/scorescss-validator.jpg)
 
 - The --hue error is for a color variable that was also used in this stylesheet.
+
+### JS Validation
+
+[JSHint](https://jshint.com/) :
 
 ![js validator](readme-files/js-validator.jpg)
 
@@ -55,3 +61,7 @@ Notes:
     * [Chrome](https://www.google.com/chrome/)
     * [FireFox](https://www.mozilla.org/en-US/firefox/new/)
     * [Edge](https://www.microsoft.com/en-us/edge)
+
+## Unfixed Bugs
+
+- Not sure if it's a bug but the alert('') message on line 766 in script.js does not appear on my ios device which is a iPhone 11. I was unable to figure out as to why this was.
