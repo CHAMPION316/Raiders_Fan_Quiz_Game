@@ -61,7 +61,9 @@ From left to right in hexadecimal:
 <img src="readme-files/correct-incorrect.jpg">
 
 - The Score Area
-    - Upon answering correctly the score at the bottom will increment to 100 points for every correct answer while the the wrong answer will reward you with 0 points. 
+    - Upon answering correctly the score at the bottom will increment to 100 points for every correct answer while the the wrong answer will reward you with 0 points.
+    - The max amount of points a user can score is 3000 points since there is 30 questions each worth 100 points each.
+    - After submitting your name you will be prompted with a message that tells you what category as a fan you fall under with a unique message based on your score. 
 
 ### 2.2. Features left to implement in the future
 - Add a modernized username and score chart with rankings.
