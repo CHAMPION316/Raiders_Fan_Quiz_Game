@@ -64,4 +64,4 @@ Notes:
 
 ## Unfixed Bugs
 
-- Not sure if it's a bug but the alert('') message on line 766 in script.js does not appear on my ios device which is a iPhone 11. I was unable to figure out as to why this was.
+- Not sure if it's a bug but the alert('') message on line 766 in script.js does not appear on my ios device which is a iPhone 11. A google search has led me to believe that it's an ios issue.

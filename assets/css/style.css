@@ -51,6 +51,7 @@ body.wrong {
     margin: 20px 0;
 }
 
+/*...........................................................button border*/
 .btn {
     --hue: var(--hue-neutral);
     background-color: hsl(var(--hue), 20%, 70%);
@@ -58,6 +59,7 @@ body.wrong {
     padding: 5px 10px;
 }
 
+/*............................................................button over color*/
 .btn:hover {
     border-color: #b8f3ff;
 }
