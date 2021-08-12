@@ -51,3 +51,32 @@ From left to right in hexadecimal:
 * 63768d
 * 8ac6d0
 * b8f3ff
+
+- The Game Area
+    - This section is built with a container, containing a question and four options to choose the correct answer to the question. 
+    <img src="readme-files/questions.jpg">
+
+- The Question Section
+    - Whether you choose the correct or wrong answer the options will highlight afterward to reveal the one and only correct answer in it's own unique color while the others all change to their own same color to reveal the wrong answers. 
+<img src="readme-files/correct-incorrect.jpg">
+
+- The Score Area
+    - Upon answering correctly the score at the bottom will increment to 100 points for every correct answer while the the wrong answer will reward you with 0 points. 
+
+---
+
+## 3. Technologies used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) - provides the content and structure for the website.
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - styling for my website.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - provide the logic of the language.
+- [Lucid](https://lucid.app/users/login#/login) - used to create the project's wireframes.
+- [Gitpod](https://gitpod.io/) - used to develop the website
+- [Visual Studio Code](https://code.visualstudio.com/download) - used to develop the website outside of Gitpod by running the code safetly offset incase Gitpod's servers crash. 
+- [GitHub](https://github.com/) - used to host the project.
+- [Google Fonts](https://fonts.google.com/) - used to provide my fonts (font-family: 'Iceberg)
+- [Coolors](https://coolors.co/) - used to create the color palette for my whole website.
+- [Am I Responsive?](http://ami.responsivedesign.is/) - used to present the site on different devices.
+- [HTML Validator](https://validator.w3.org/) - used to find errors that don't belong in my HTML code.
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) - used to find errors that don't belong in my CSS code.
+- [JSHint](https://jshint.com/) - used to find errors in my JS code.
