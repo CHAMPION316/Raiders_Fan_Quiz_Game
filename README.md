@@ -29,8 +29,7 @@ I used [lucid](https://lucid.app/users/login#/login) to create all my wireframes
 |    Desktop   |    Tablet    |    Mobile    |
 |    :----:    |     :----:   |    :----:    |
 |[Home Page](wireframes/desktop-hp.png)|[Home Page](wireframes/tablet-hp.png)|[Home Page](wireframes/phone-hp.png)|
-|[Home Page Image 2](wireframes/desktop-hp2.png)|[Home Page Image 2](wireframes/tablet-hp2.png)|[Home page Image 2](wireframes/phone-hp2.png)|
-|[Video Page](wireframes/desktop-vp.png)|[Video Page](wireframes/tablet-vp.png)|[Video Page](wireframes/phone-vp.png)|
-|[Bio Page](wireframes/desktop-bp.png)|[Bio Page](wireframes/tablet-bp.png)|[Bio Page](wireframes/phone-bp.png)|
+|[Questions](wireframes/desktop-hp2.png)|[Questions](wireframes/tablet-hp2.png)|[Questions](wireframes/phone-hp2.png)|
+|[User and Score](wireframes/desktop-vp.png)|[User and Score](wireframes/tablet-vp.png)|[User and Score](wireframes/phone-vp.png)|
 
 ----
