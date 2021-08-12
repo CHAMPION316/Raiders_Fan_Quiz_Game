@@ -105,3 +105,8 @@ body.wrong {
 .hide {
     display: none;
 }
+
+/*...............................................................margin for button div*/
+.rectangle-btn {
+    margin-bottom: 10px;
+}
